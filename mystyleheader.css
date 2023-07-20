@@ -1,0 +1,106 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    background: linear-gradient(180deg, #010027 0%, #04007e 100%);
+    max-width: 1280px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto -25px auto;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: -2px -2px 20px #ffffff;
+    border: solid 1px white;
+}
+
+.header{
+    background: linear-gradient(180deg, #060074 0%, #080019 90%);
+    justify-content: space-between;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px 9px;
+    box-shadow: 0 20px 40px black;
+}
+
+.header__nav{
+    max-width: 1280px;
+    height: auto;
+    padding: 1px;
+    margin: 0 auto;
+    align-items: baseline;
+}
+
+.header__nav__links{
+    height: auto;
+    padding: 16px;
+    margin: 10px auto;
+    align-items: baseline;
+}
+
+.header__nav__link{
+    font-size: 1.4em;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 8px 7px #150167;
+    color: rgb(7, 0, 90);
+    background-color: rgb(132, 132, 132);
+    box-shadow: 0 7px 5px #0808a8;
+    padding: 8px;
+    border-radius: 7px;
+    border: 2px groove rgb(49, 42, 255);
+    margin: 6px 7px;
+}
+
+.header__nav--link:hover{
+    font-size: 1.6em;
+    margin: 8px auto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 0, 118);
+    box-shadow: 0 7px 5px #000000;
+    text-shadow: 0 8px 7px #ede5e5;
+    border: 2px groove rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.header__site__name{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 3px auto;
+}
+
+.header__site__title{
+    background: linear-gradient(180deg, #000000 0%, #04007e 100%);
+    font-size: 4.3em;
+    color: #ffffff;
+    border-bottom: double 5px white;
+    border-right: double 5px white;
+    text-shadow: #144e89 7px 10px 5px;
+    box-shadow:#424242 10px 10px 45px;
+    padding: 4px;
+    margin: 126px 78px;
+}
+
+.header__site__photo{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 12px auto;
+    padding: 17px;
+}
+.header__site__img{
+    max-width: 95%;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow:-4px 6px 14px rgb(160, 158, 158);
+    border: groove 1px white;
+}
+span{
+    color: #d7d7d7;
+    text-shadow: #1f0aa8 7px 10px 5px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+/*Aqui comienza el formulario*/
+.form {
+    background-color:#fff;
+    margin:auto;
+    width:90%;
+    max-width:400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    border: #03f036 2px groove;
+    box-shadow: 0 5px 4px 1px rgba(248, 245, 245, 0.762);
+    text-align:center;
+  }
+  
+  .form__title {
+    font-size:2rem;
+    margin-bottom: .5em;
+  }
+  
+  .form__parrafo {
+    font-weight:300;
+  }
+  
+  .form__link{
+    font-weight:400;
+    color:#000;
+  }
+  
+  .form__container {
+    margin-top:3em;
+    display: grid;
+    gap:2.5em;
+  }
+  
+  .form__group {
+    position: relative;
+    --color:#5757577e;
+  }
+  
+  .form__input {
+    width:100%;
+    background: none;
+    color:#82b50b;
+    font-size:1rem;
+    padding: .7em .3em;
+    border:none;
+    outline:none;
+    border-bottom:1px solid  var(--color);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .form__input:not(:placeholder-shown){
+    color: #4a4646;
+  }
+  
+  .form__input:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label {
+    transform:translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color:#6dc304
+  }        
+  
+  .form__label {
+    color:var(--color);
+    cursor: pointer;
+    position:absolute;
+    top:0;
+    left: 5px;
+    transform: translateY(10px);
+    transition:transform .5s, color .3s;
+  }
+  
+  .form__submit {
+    background: linear-gradient(180deg,#60cf06 0%, #114ac5 100%);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    width:90%;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px gray;
+  }
+  
+  .form__line {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 1px;
+    background-color: #062233;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+  }
+  
+  .form__input:focus ~ .form__line, .form__input:not(:placeholder-shown) ~ .form__line {
+    transform: scale(1);
+  }
+  
+  
+  .form__input:focus ~ .form__line, .form__input:not(:placeholder-shown) ~ .form__line {
+    transform: scale(1);
+  }
+  
+  .form__submit:hover {
+    border:#0d0c0a 2px solid;
+    transform:scale(1);
+    transition:transform .3s;
+  }
+  
+  /*Aqui termina el formulario*/
+  
+  
+    </style>
+</head>
+<body>
+    <form id="form__login" class="form" id="form__login">
+        <h2 class="form__title">Inicia sesión</h2>
+        <p class="form__parrafo">¿Aún no tienes cuenta? <a href="#" class="form__input">Entra aquí</a></p>
+
+        <div class="form__container">
+            <div class="form__group">
+                <input type="text" id="name" class="form__input" placeholder=" ">
+                <label for="name" class="form__label">Nombre</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input type="text" id="user" class="form__input" placeholder=" "/>
+                <label for="name" class="form__label">Usuario</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input type="text" id="password" class="form__input" placeholder=" "/>
+                <label for="name" class="form__label">Contraseña</label>
+                <span class="form__line"></span>
+                <input type="submit" class="form__submit" value="Entrar">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
