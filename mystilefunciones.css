@@ -1,0 +1,106 @@
+
+    
+      .msgBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 242px;
+        background: #eee;
+      }
+
+      .msgBox p {
+        line-height: 1.5;
+        padding: 10px 20px;
+        color: #333;
+        padding-left: 82px;
+background-position: 25px center;
+background-repeat: no-repeat;
+
+      }
+
+      .msgBox button {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.1rem;
+        color: #aaa;
+      }
+
+
+
+
+
+
+
+
+
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button__sms {
+    background: linear-gradient(360deg, green 0%, rgb(5, 45, 5) 100%);
+    padding: 20px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.5em;
+    margin: 0 auto;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    width: 700px;
+}
+
+.container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 500px;
+background: #0bf038;
+border-radius: 6px;
+box-shadow: 4px 4px 12px 4px black;
+}
+
+.container p {
+line-height: 1.5;
+padding: 10px 20px;
+color: #0c0c0c;
+padding-left: 82px;
+background-position: 25px center;
+background-repeat: no-repeat;
+}
+
+.container button {
+background: none;
+border: none;
+position: absolute;
+top: 0;
+right: 0;
+font-size: 1.1rem;
+color: #101010;
+padding: 10px;
+}
+
+.list__user {
+position: center;
+bottom: 20%;
+margin: 100px auto;
+padding: 25px;
+box-shadow: 4px 4px 12px 4px black;
+border-radius: 6px;
+}
+
+.title__li {
+list-style: none;
+text-align: center;
+padding: 15px;
+margin: 5px auto;
+}
+

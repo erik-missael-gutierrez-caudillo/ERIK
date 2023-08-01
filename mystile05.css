@@ -1,5 +1,6 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
 }
 
 .logo__head {
@@ -30,32 +31,82 @@ body {
     padding: 20px;
     margin: 10px auto;
 }
+/*Aquí termina el header*/
+
 
 .title__job{
-    font-size: 3em;
+    font-size: 1.9em;
     text-align: center;
+    padding: 40px;
+    margin: 0 auto;
 }
 
 .title__job-2 {
-    font-size: 2.5em;
-    padding: 20px;
+    font-size: 1.9em;
+    padding: 10px;
     margin: 10px auto;
     text-align: center;
+    color: #0c0d0c;
+    text-shadow: 3px 3px 9px rgb(97, 150, 0);
 }
 
-.text__job {
-    font-size: 1.5em;
-    margin: 10px auto;
-    padding: 10px;
+.text__job-2 {
+    font-size: 1.4em;
+    margin: 40px auto;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0.5px 1px 4px 1px black;
+    border-radius: 5px;
 }
 
-#form__login {
-    max-width: 50%;
-    background: linear-gradient(180deg, rgb(164, 197, 0) 0%, rgb(78, 211, 0) 100%);
-    padding: 100px;
+.text__job-3 {
+    font-size: 1em;
     margin: 10px auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#text__relevant {
+    color: #192c01;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 40px;
+    margin: 15px auto;
+    text-shadow: 3px 3px 7px rgb(135, 133, 133);
+
+}
+/*Aquí termina el div de texto*/
+
+
+.photo__vacantes {
+    max-width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.photo__vacantes__city {
+    border-radius: 4%;
+    object-fit: cover;
+    max-width: 100%;
+    margin: 35px auto;
+    padding: 1px;
+    border: groove 3px green;
+    box-shadow: 4px 4px 12px 4px black;
+}
+
+/* TERMINADO
+Aquí termina foto vacantes div*/
+
+#form__login {
+    max-width: 72%;
+    background: linear-gradient(180deg, rgb(164, 197, 0) 0%, rgb(78, 211, 0) 100%);
+    padding: 5px;
+    margin: 10px auto;
+    display: block;
     height: auto;
     border-radius: 6px;
     box-shadow: 3px 3px 9px 3px black;
@@ -84,47 +135,48 @@ input:valid + span::after {
 
 
 .form__container {
-    max-width: 1200px;
+    max-width: 85%;
     background-color: white;
     justify-content:space-between;
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    padding: 50px;
-    margin: 0 auto;
+    padding: 15px;
+    margin: 30px auto;
     border-radius: 6px;
+    overflow: hidden;
 }
 
 .form__title {
-    font-size: 62px;
+    font-size: 28px;
     text-align: center;
     padding: 25px;
     margin: 10px auto;
 }
 
 .form__text {
-    font-size: 24px;
+    font-size: 14px;
     text-align: center;
     padding: 20px;
     margin: o auto;
 }
 
 .form__group {
-    padding: 20px;
+    padding: 6px;
     position: relative;
-    max-width: 1100px;
+    max-width: 100%;
+    margin: 5px auto;
 }
 
 .form__input {
-    max-width: 100px;
-    padding: 20px;
+    max-width: 100%;
+    padding: 10px;
     margin: 10px auto;
 
 }
 
 .form__label {
-padding: 10px;
-margin: 10px auto;
+margin: 5px auto;
 }
 
 .form__input:hover, .form__input:active {
@@ -136,43 +188,187 @@ border: 3px groove green;
     color: black;
     border: 2px solid rgb(0, 0, 0);
 }
-
-.button__submit {
+        
+.form__selects {
     max-width: 100%;
-    margin: 10px auto;
-    margin: 10px auto;
+    justify-content:space-between;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 35px;
+    margin: 0 70px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#form__select {
+    max-width: 80%;
+    height: auto;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+select + option {
+    padding: 10px;
+    margin: 5px auto;
+}
+
+select{
+    padding: 10px;
+    margin: 5px auto;
+}
+
+select:hover {
+    border-radius: 6px;
+    border: solid green 2px;
+    color: #63a100;
+}
+
+select:active {
+    border-radius: 6px;
+    border: solid rgb(0, 67, 0) 2px;
+    color: #000000;
+    background-color: #63a100;
+}
+
+option {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/*Aquí termina el div form__selects*/
+
+.submit__button {
+    max-width: 100%;
+    margin: 5px auto;
+    display: block;
+    padding: 5px 80px;
 }
 
 .form__submit:hover {
     margin: 10px auto;
-    padding: 12px 33px;
+    padding: 6px 31px;
     background-color: rgb(120, 159, 0);
     border-radius: 6px;
     box-shadow: 2px 2px 4px 2px rgb(88, 195, 0);
     }
-    
+
 .form__submit {
-        margin: 10px auto;
-        padding: 10px 30px;
-        background-color: rgb(120, 159, 0);
-        border-radius: 6px;
-        box-shadow: 2px 2px 4px 2px black;
-        display: flex;
-        }
+    margin: 10px auto;
+    padding: 5px 30px;
+    background-color: rgb(120, 159, 0);
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 2px black;
+    display: flex;
+    }
 
 .form__submit:focus {
-        margin: 10px auto;
-        padding: 11px 31px;
-        background-color: rgb(120, 159, 0);
-        border-radius: 6px;
-        border: 2px black solid;
-        box-shadow: 2px 2px 4px 2px black;
-        }
-        
-.form__group--2 {
-    max-width: 100%;
-    background-color: rgba(177, 177, 177, 0.577);
+    margin: 10px auto;
+    padding: 7px 32px;
+    background-color: rgb(120, 159, 0);
     border-radius: 6px;
-    border: 2px solid green;
-    padding: 15px;
-}
+    border: 2px black solid;
+    box-shadow: 2px 2px 4px 2px black;
+    }
+/*Aquí termina form*/
+
+/*Aquí comienza buttons__nosotros*/
+
+    .buttons__nosotros {
+        background-color: rgba(130, 196, 0, 0.908);
+        max-width: 100%;
+        margin: 20px auto;
+        justify-content: space-between;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 3px solid white;
+    }
+    
+     .nosotros__link {
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px auto;
+        font-size: 1.2vw;
+        color: white;
+        background-color: black;
+        border-radius: 6px;
+        text-shadow: 2px 2px 2px rgba(187, 187, 0, 0.725);
+        box-shadow: 1px 1px 8px 1px rgb(224, 224, 224);
+    }
+    
+    .nosotros__link:hover, .nosotros__link:active {
+        padding: 6px;
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(149, 218, 0);
+        box-shadow: 1px 1px 8px 1px rgb(0, 0, 0);
+        background-color: white;
+        border: groove 3px rgb(6, 6, 6);
+    }
+    
+    .nosotros__link:focus {
+        border: groove 4px white;
+    }
+    
+    /*Botones terminados*/
+    
+    
+    .site__footer-1 {
+        background-color: black;
+        margin: 0 auto;
+        border-bottom: 3px solid white;
+        padding: 5% auto;
+        box-shadow: 2px 2px 9px white;
+    }
+
+    .site__footer {
+        background-color: black;
+        margin: 0 auto;
+        border-bottom: 3px solid white;
+        padding: 5% auto;
+        box-shadow: 2px 2px 9px white;
+    }
+    
+    .site__footer__text {
+        color: white;
+        text-shadow: 3px 5px 6px rgb(168, 190, 0);
+        font-size: 1.5vw;
+        padding: 5px;
+        margin: 5px auto;
+        text-align: center;
+        border-radius: 4px;
+        letter-spacing: 5px;
+        box-shadow: 4px 4px 12px 4px white;
+    }
+    
+    .end__page {
+        background-color: rgb(0, 0, 0);
+        margin: 0 auto;
+    }
+    
+    .text__end {
+        color: white;
+        font-size: 1.5vw;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px;
+        text-shadow: 4px 1px 5px rgb(255, 255, 0);
+    }
+
+    .social__media__links__text {
+        color: white;
+        padding: 15px;
+    }
+
+    .social__media__link {
+        color: white;
+        padding: 30px;
+        font-size: 2.7vw;
+    }

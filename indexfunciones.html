@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function start</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="mystilefunciones.css">
+  
+  </head>
+  <body>
+    <button class="button__sms">Mensaje de retiro por medio de terminos y condiciones</button>
+
+    <script>
+      function mensajeEnPantalla(){
+        let html = document.querySelector("html");
+
+        let contenedor = document.createElement("div");
+        contenedor.setAttribute("class", "container");
+        html.appendChild(contenedor);
+
+        let mensaje = document.createElement("p");
+        mensaje.textContent = "Dividiré mi dinero en 2 mediante politica de servicio aplicado en terminos y condiciones.Mi nombre de usuario es esmeraldayare24 y mi saldo actual es de $1000.00";
+        contenedor.appendChild(mensaje);
+
+        let cerrarBoton = document.createElement("button");
+        cerrarBoton.textContent = "x";
+        contenedor.appendChild(cerrarBoton);
+
+        cerrarBoton.onclick = function() {
+            contenedor.parentNode.removeChild(contenedor);
+        };
+      }
+      mensajeEnPantalla();
+    </script>
+    <div>
+            
+
+<script>
+function displayMessage(msgText, msgType) {
+  let html = document.querySelector("html");
+
+let panel = document.createElement("div");
+panel.setAttribute("class", "msgBox");
+html.appendChild(panel);
+
+let msg = document.createElement("p");
+msg.textContent = msgText;
+panel.appendChild(msg);
+
+let closeBtn = document.createElement("button");
+closeBtn.textContent = "x";
+panel.appendChild(closeBtn);
+
+closeBtn.onclick = function () {
+  panel.parentNode.removeChild(panel);
+};
+
+if (msgType === "warning") {
+  msg.style.backgroundImage = "url(iconos/message-alt-error-regular-24.png)";
+  panel.style.backgroundColor = "red";
+} else if (msgType === "chat") {
+  msg.style.backgroundImage = "url(iconos/message-rounded-dots-solid-24.png)";
+  panel.style.backgroundColor = "aqua";
+} else {
+  msg.style.paddingLeft = "20px";
+}
+}
+let btn = document.querySelector("button");
+btn.onclick = function () {
+  displayMessage("Your inbox is almost full — delete some mails", "warning");
+displayMessage("Brian: Hi there, how are you today?", "chat");
+};
+displayMessage();
+</script>
+
+
+
+</script>
+  </body>
+</html>

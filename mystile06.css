@@ -1,0 +1,84 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.site {
+    background: linear-gradient(360deg, black 0%, rgb(40, 40, 40) 100%);
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    height: auto;
+}
+
+.site__photo {
+    object-fit: cover;
+    max-width: 100%;
+    margin: 10px auto;
+    position:relative;
+    height: auto;
+}
+
+.site__logo {
+    position: relative;
+    margin: auto;
+    padding: 5px;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.nav__header {
+    max-width: 100%;
+    height: auto;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.nav__header__links {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: white;
+    margin: 10px 20px;
+    padding: 3px;
+    text-shadow: 2px 3px 3px rgb(96, 179, 0);
+    text-align: center;
+    border-bottom: solid 2px rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px rgb(95, 95, 95);
+
+}
+
+.nav__link:hover, .nav__link:active {
+    color: rgb(94, 161, 0);
+    border-bottom: solid 2px rgb(65, 185, 0);
+    text-shadow: 1px 1px 9px rgb(126, 184, 0);
+    padding: 4px;
+    box-shadow: 1px 1px 15px 1px rgb(123, 204, 2);
+}
+
+.nav__link:focus{
+    border: solid 2px rgb(122, 188, 0);
+    color: rgb(122, 188, 0);
+    border-radius: 6px;
+}
+
+/*Terminado el header*/
