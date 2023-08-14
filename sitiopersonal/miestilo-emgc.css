@@ -95,7 +95,7 @@ color:green;
 .my-header__main {
 	height: calc(100vh-70px);
 	display: flex;
-	justify-content:space-between;
+	justify-content:between;
 	align-items: center;
 	padding: 0;	
 }
