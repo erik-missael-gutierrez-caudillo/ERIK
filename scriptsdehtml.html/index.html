@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@500;700&display=swap');
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+            background-color: rgba(255, 255, 255, 0.615);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .article {
+            width: 50%;
+            margin: 10% auto 0 auto;
+        }
+
+        #container {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: brown;
+            width: 80%;
+            border-radius: 15px;
+            padding: 5% 10%;
+            margin: 10% auto;
+            box-shadow: .2rem .2rem 5rem .2rem rgb(255, 25, 0);
+            border: solid 2px red;
+        }
+
+        #title, #subtitle, #cuestion {
+            color: white;
+            text-shadow: 2px 2px 1px black;
+            font-weight: 700;
+        }
+
+        #button {
+            display: block;
+            width: 90%;
+            padding: 10px 15px;
+            margin: 10px auto;
+            border: solid 2px rgb(92, 10, 10);
+            border-radius: 15px;
+            font-size: 16px;
+            box-shadow: .1rem .1rem 1rem .1rem rgba(85, 4, 4, 0.947);
+        }
+
+        #button:hover {
+            padding: 12px 17px;
+            background-color: rgb(115, 22, 22);
+            color: white;
+            box-shadow: .1rem .1rem 1rem .1rem rgba(255, 255, 255, 0.947);
+            border: solid 2px rgb(0, 0, 0);
+        }
+
+        #button:active {
+            padding: 14px 18px;
+            background-color: red;
+            color: white;
+            box-shadow: .1rem .1rem 1rem .1rem rgba(255, 255, 255, 0.947);
+            border: solid 2px rgb(0, 0, 0);
+        }
+
+        #button:focus {
+            background-color: white;
+            color: red;
+            border-color: rgb(92, 10, 10);
+            box-shadow: .1rem .1rem 1rem .1rem rgba(50, 4, 4, 0.947);
+        }                
+    </style>
+</head>
+<body>
+    <article class="article">
+    <div id="container">
+    <h1 id="title">Hola, para suscribirte a nuestro newsletter</h1>
+    <h2 id="subtitle"></h2>
+    <h3 id="cuestion"></h3>
+    <button id="button">Ingresa tu email</button>
+    </div>
+    </article>
+
+
+    <script>
+          //Escuchar el click en el botón
+        const boton = document.getElementById("button")
+        boton.addEventListener("click", preguntarEmail)
+
+        //Guardamos referencias a los heading
+        const cuestion = document.getElementById("cuestion")
+        const element = document.getElementById("title")
+        const h2 = document.getElementById("subtitle")
+        
+        //Preguntar y guardar el nombre del usuario
+        function preguntarEmail () {
+            const correo = prompt("Ingresa tu email")
+            mostrarEmail(correo)
+        }
+        //Insertar el nombre donde estan los tres puntos
+        function mostrarEmail(correo) {
+            element.textContent = "Gracias por suscribirte"
+            cuestion.textContent = "Hemos enviado un correo a " + correo + " revisa tu bandeja de entrada, entra en el mensaje y da clic en confirmar."
+        }
+ 
+    </script>
+</body>
+</html>

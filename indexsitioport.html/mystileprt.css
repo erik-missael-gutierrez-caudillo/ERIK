@@ -1,0 +1,237 @@
+       /* Generales */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Maven+Pro:wght@400;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Big+Shoulders+Display:wght@700 & family= Borel & family= Maven+Pro:wght@400;600;800 & mostrar=cambiar');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+    * {
+        box-sizing: border-box;
+    }
+   
+   /*Header*/
+   .header {
+       width: 100%;
+       height: 543px;
+       margin: 0;
+       display: flex;
+       flex-wrap: wrap;
+       overflow: hidden;
+   }
+   
+   .container__header {
+       background: linear-gradient(360deg, rgb(58, 1, 1) 0%, rgb(28, 1, 179) 100%);
+       width: 100%;
+       height: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       margin: 0 auto;
+       overflow: hidden;
+       padding: 5px;
+   }
+   
+   .header__head {
+       width: 100%;
+       height: 10%;
+       display: inline-flex;
+       margin: 0 auto;
+       padding-right: 13px;
+       background-color: rgb(70, 2, 2);
+   }
+   
+   .header__head__logo {
+       width: 38%;
+       height: 100%;
+       padding: 0 5px;
+   }
+   
+   .logo__text {
+       font-family:  'Borel', cursive;
+       font-weight: 600;
+       margin: 5px auto;
+       padding: 3px 6px;
+       font-size: 28px;
+       border-radius: 4px;
+       color: darkgray;
+   }
+   
+   .header__head__nav {
+       width: 62%;
+       height: 100%;
+       margin: 0 40px 0 0;
+       padding: 5px 60px 5px 0;
+   }
+   
+   .nav__links--link {
+       text-decoration: none;
+       color: darkslategray;
+       padding: 10px 45px;
+       margin: 5px auto;
+       text-align: center;
+       color: white;
+       font-size: 26px;
+   }
+   
+   .nav__links--link:first-of-type {
+    padding-left: 0;
+   }
+   
+   .header__main {
+       width: 40%;
+       height: 90%;
+       margin: 20px auto;
+       padding: 5px;
+   }
+   
+   .header__main__texts {
+        margin-left: 10%;
+       padding: 5px 8px;
+   }
+   .main__texts--title{
+    font-family: 'Borel', cursive;
+    font-size: 63px;
+   font-weight: 800;
+   color: rgb(255, 255, 255);
+   text-shadow: 3px 3px 9px rgb(164, 12, 12);
+   }
+   
+   .main__texts--subtitle {
+       font-size: 50px;
+       font-weight: 800;
+       color: rgb(96, 3, 3);
+       text-shadow: 3px 3px 9px rgb(24, 24, 24);
+       margin: 0 auto;
+   }
+   
+   .header__photo {
+    width: 55%;
+    height: 90%;
+    padding: 0;
+    margin: 0  auto;
+   }
+   
+   .header__photo--img {
+       width:56%;
+       height: 100%;
+       object-fit: cover;
+       border-radius: 10px;
+       margin-left: 47%;
+   }
+
+/* Main*/
+   main {
+    margin: 60px auto 0 auto;
+   }
+
+/* Sección objetivo*/   
+.objetivo {
+    width: 100%;
+    height: 300px;
+}
+
+
+/* Principal */
+.principal {
+    display: flex;
+    max-width: 76%;
+    min-width: 32%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* Columnas */
+.columna {
+    color: white;
+    padding: 2.5rem;
+    width: 24%;
+    height: 800px;
+    overflow: hidden;
+    transition: width .3s ease-in-out;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.columna.activa {
+    width: 55%;
+    height: 800px;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.columna:first-of-type{
+    border-radius: 1rem 0 0 1rem;
+}
+
+.columna:last-of-type {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.creatividad {
+    background-color: hsl(0, 87%, 12%);
+}
+
+.innovacion {
+    background-color:  hsl(220, 2%, 27%);
+}
+
+.pensamiento {
+    background-color:  hsl(225, 100%, 13%);
+}
+
+.skill {
+    object-fit: cover;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+.texto {
+    font-size: 15px;
+    margin-bottom: 3rem;
+    flex-grow: 2;
+    padding: 10px;
+}
+
+.enlace {
+   text-decoration: none; 
+   background-color: white;
+   border-radius: 1rem;
+   margin-top: 16px;
+   margin-bottom: 8px;
+   padding: 5px 1rem;
+   font-size: 10px;
+   flex-grow: 1;
+}
+
+.creatividad .enlace {
+    color: orange;
+}
+
+.innovacion .enlace {
+    color:  hsl(0, 0%, 28%);
+}
+
+.pensamiento .enlace {
+    color: darkcyan;
+    margin-top: .1rem;
+
+}

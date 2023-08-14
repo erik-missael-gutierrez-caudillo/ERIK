@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & JavaScript </title>
+    <style>
+        html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+  body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(43, 136, 0);
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+.article {
+  width: 20%;
+  height: 100%;
+  float: right;
+  bottom: 0%;
+  padding-right: 1rem;
+}
+
+.container__article {
+  background-color: rgb(200, 209, 15);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+border-radius: 10px;
+border: solid rgb(240, 209, 4) 2px;
+  margin: 100% auto 0 0;
+  box-shadow: 0.9px 0.9px 1px 0.5px gray;
+font-family: Sans-serif;
+box-shadow: 2rem 2rem 49em 2rem rgb(209, 238, 47);
+padding-right: 1rem;
+}
+
+h2 {
+    width: 100%;
+    height: 40%;
+  color: white;
+  padding: 18px 12px;
+  margin: 2px auto;
+  font-size:28px;
+  font-weight:800;
+  text-align:center;
+  text-shadow: 1.8px 1.7px 2px black;
+}
+
+h3 {
+    width: 100%;
+    height: 40%;
+  color: rgb(251, 251, 251);
+  padding: 18px 12px;
+  margin: 2px auto;
+  font-size:20px;
+  font-weight:800;
+  text-align:center;
+  text-shadow: 1.8px 1.7px 2px black;
+}
+
+
+#cuestion  {
+    width: 100%;
+    height: 40%;
+  color: white;
+  padding: 10px 22px 30px 22px;
+  margin: 2px auto;
+  font-size:28px;
+  font-weight:800;
+  text-align:center;
+  text-shadow: 1.8px 1.7px 2px black;
+}
+
+#button {
+    width: 80%;
+    height: 20%;
+  display:block;
+  background-color: rgb(11, 126, 0);
+  border-radius: 4px;
+  border: none;
+  padding: 7px 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px white solid;
+}
+
+#button:hover {
+background-color: rgb(87, 135, 6);
+padding: 8px 13px;
+box-shadow: .2rem .2rem .6rem .1rem rgb(1, 85, 6);
+}
+
+#button:active {
+  background-color: rgb(255, 255, 255);
+padding: 8px 13px;
+box-shadow: .2rem .2rem .6rem .1rem white; 
+color: black;
+}
+
+#button:focus {
+  background-color: rgb(255, 255, 255);
+padding: 8px 13px;
+box-shadow: .2rem .2rem .6rem .1rem rgb(4, 196, 230); 
+color: rgb(39, 83, 0); 
+}
+    </style>
+</head>
+<body>
+    <article class="article">
+        <div class="container__article">
+        <h2 id="h2">Bienvenido mi nombre es City Amigo 🤖 y tu, ¿Cómo te llamas?</h2>
+        <h1 id="cuestion">...</h1>
+        <h3 id="h3"></h3>
+        <button id="button">Introduce tu nombre</button>
+        </div>
+      </article>
+
+
+<script>
+  //Escuchar el click en el botón
+const button = document.getElementById("button")
+button.addEventListener("click", preguntarNombre)
+
+//Guardamos referencias a los heading
+const cuestion = document.getElementById("cuestion")
+const h2 = document.getElementById("h2")
+const h3 = document.getElementById("h3")
+
+
+//Preguntar y guardar el nombre del usuario
+function preguntarNombre() {
+  const nombre = prompt("Introduce tu nombre")
+  mostrarNombre(nombre)
+}
+//Insertar el nombre donde estan los tres puntos
+function mostrarNombre(nombre) {
+  h2.textContent = "Hola 🖐️"
+  h3.textContent = "Espero y te encuentres muy bien. En todo momento estoy aquí para lo que se te ofrezca"
+  cuestion.textContent = nombre
+}  
+
+</script>
+
+
+</body>
+</html>
